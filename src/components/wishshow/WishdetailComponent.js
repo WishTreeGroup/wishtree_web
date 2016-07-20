@@ -5,15 +5,30 @@ import Wishthumbnail from './WishthumbnailComponent.js';
 import Wishitems from './WishitemsComponent.js';
 import Wishsummary from './WishsummaryComponent.js';
 
+
 require('styles/wishshow/Wishdetail.sass');
 
+let dataService = require('stores/WishDetailStore');
+
 class WishdetailComponent extends React.Component {
+  constructor(){
+    super();
+
+  }
   render() {
+    var wish = dataService.findById(this.props.id);
+    this.state = {
+      thumbnail: wish.thumbnail,
+      name: wish.name,
+      type: wish.type,
+      score: wish.score,
+      summary: wish.summary
+    }
     return (
       <div className="wishdetail-component">
-        <Wishthumbnail />
-        <Wishitems />
-        <Wishsummary />
+        <Wishthumbnail thumbnail={this.state.thumbnail}/>
+        <Wishitems name={this.state.name} type={this.state.type} score = {this.state.score}/>
+        <Wishsummary summary={this.state.summary}/>
       </div>
     );
   }

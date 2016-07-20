@@ -13,7 +13,7 @@ class WishthumbnailComponent extends React.Component {
   render() {
     return (
       <div className="wishthumbnail-component">
-        <Image className="wishthumbnail" src="../../images/yeoman.png"  alt="wishsummary"responsive/>
+        <Image className="wishthumbnail" src={this.props.thumbnail}  alt="wishsummary"responsive/>
       </div>
 
     );
@@ -22,8 +22,5 @@ class WishthumbnailComponent extends React.Component {
 
 WishthumbnailComponent.displayName = 'WishshowWishthumbnailComponent';
 
-// Uncomment properties you need
-// WishthumbnailComponent.propTypes = {};
-// WishthumbnailComponent.defaultProps = {};
 
 export default WishthumbnailComponent;

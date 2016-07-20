@@ -9,13 +9,13 @@ class WishitemsComponent extends React.Component {
     return (
       <div className="wishitems-component">
         <div className="wishitem">
-          <span>名称</span>wishname
+          <span>名称</span>{this.props.name}
         </div>
         <div className="wishitem">
-          <span>类型</span>wishtype
+          <span>类型</span>{this.props.type}
         </div>
         <div className="wishitem">
-          <span>积分</span>wishscore
+          <span>积分</span>{this.props.score}
         </div>
       </div>
     );
@@ -23,9 +23,5 @@ class WishitemsComponent extends React.Component {
 }
 
 WishitemsComponent.displayName = 'WishshowWishitemsComponent';
-
-// Uncomment properties you need
-// WishitemsComponent.propTypes = {};
-// WishitemsComponent.defaultProps = {};
 
 export default WishitemsComponent;

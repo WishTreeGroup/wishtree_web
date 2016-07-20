@@ -11,7 +11,7 @@ class AppComponent extends React.Component {
   render() {
     return (
       <div className="index">
-        <Wishdetail />
+        <Wishdetail id="3"/>
       </div>
     );
   }

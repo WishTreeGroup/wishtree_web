@@ -8,7 +8,7 @@ class WishsummaryComponent extends React.Component {
   render() {
     return (
       <div className="wishsummary-component">
-        <p>愿望故事愿望故事愿望故事愿望故事愿望故事愿望故事愿望故事愿望故事愿望故事愿望故事愿望故事愿望故事愿望故事愿望故事愿望故事</p>
+        <p>{this.props.summary}</p>
       </div>
     );
   }
