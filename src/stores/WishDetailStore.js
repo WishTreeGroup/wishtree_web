@@ -10,7 +10,10 @@ module.exports = (function () {
         }
       }
       return {};
-    },
+    }
+    var getAllWishes = function(){
+      return wishes;
+  },
     wishes = [
       {
         "id": 1,
@@ -47,6 +50,7 @@ module.exports = (function () {
     ];
 
   return {
-    findById:findById
+    findById: findById,
+    getAllWishes: getAllWishes
   }
 })();

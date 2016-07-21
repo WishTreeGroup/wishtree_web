@@ -2,13 +2,20 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/components/Main.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/components/util/WishdetaildataComponent.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/components/WishlistComponent.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/components/usershow/UseravatarComponent.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/components/usershow/UserdetailComponent.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/components/usershow/UseritemComponent.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/wishshow/WishdetailComponent.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/wishshow/WishitemsComponent.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/wishshow/WishsummaryComponent.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/wishshow/WishthumbnailComponent.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sources/Users.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/sources/Wishes.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/stores/UserDetailStore.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/stores/WishDetailStore.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/styles/App.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/styles/usershow/Useravatar.sass" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/styles/wishshow/Wishdetail.sass" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/styles/wishshow/Wishitems.sass" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/styles/wishshow/Wishsummary.sass" charset="UTF-8" />

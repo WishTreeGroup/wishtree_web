@@ -13,9 +13,8 @@ class WishthumbnailComponent extends React.Component {
   render() {
     return (
       <div className="wishthumbnail-component">
-        <Image className="wishthumbnail" src={this.props.thumbnail}  alt="wishsummary"responsive/>
+        <Image className="wishthumbnail" src={this.props.thumbnail}  alt="wishsummary"/>
       </div>
-
     );
   }
 }
