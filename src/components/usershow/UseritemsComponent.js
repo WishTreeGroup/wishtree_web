@@ -10,7 +10,7 @@ class UseritemsComponent extends React.Component {
     var items = this.props.items;
     var itemlist = items.map(function(item){
       return (
-        <UserItem className="useritem-component" itemname={item.itemname} itemvalue={item.itemvalue}/>
+        <UserItem  itemname={item.itemname} itemvalue={item.itemvalue}/>
       )
     })
     return (

@@ -27,9 +27,16 @@ class WishdetailComponent extends React.Component {
     return (
       <div className="wishdetail-component">
         <Wishtoolbar clickHandle={this.props.clickBackHandle}/>
-        <Wishthumbnail thumbnail={this.state.thumbnail}/>
-        <Wishitems name={this.state.name} type={this.state.type} score = {this.state.score}/>
-        <Wishsummary summary={this.state.summary}/>
+        <div className="wishdetail">
+          <div className="thumbnail">
+            <Wishthumbnail id="thumbnail" thumbnail={this.state.thumbnail} alttext={this.state.name}/>
+          </div>
+
+          <Wishitems name={this.state.name} type={this.state.type} score = {this.state.score}/>
+
+          <Wishsummary summary={this.state.summary}/>
+        </div>
+
       </div>
     );
   }

@@ -1,9 +1,11 @@
 'use strict';
 
 import React from 'react';
-import UserAvatar from './UseravatarComponent.js';
+import UserAvatar from '../wishshow/WishthumbnailComponent.js';
 import UserItems from './UseritemsComponent.js';
 import UserToolbar from './UserdetailtoolbarComponent.js';
+
+
 require('styles/usershow/Userdetail.sass');
 
 
@@ -20,15 +22,20 @@ class UserdetailComponent extends React.Component {
     this.state = {
       avatar: user.avatar,
       items:  [
-        {itemname: "account", itemvalue: user.account},
-        {itemname: "level", itemvalue: user.level}
+        {itemname: "帐号", itemvalue: user.account},
+        {itemname: "等级", itemvalue: user.level}
       ]
     }
     return (
       <div className="userdetail-component">
         <UserToolbar clickBack={clickBackHandle}/>
+
+
          <div className="userdetail">
-           <UserAvatar avatar={this.state.avatar}/>
+           <div className="thumbnail">
+             <UserAvatar thumbnail={this.state.avatar}/>
+           </div>
+
            <UserItems className="useritems" items={this.state.items}/>
          </div>
 

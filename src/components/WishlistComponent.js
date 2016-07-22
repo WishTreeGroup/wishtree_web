@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import {Grid, Row, Col, Thumbnail, Button} from 'react-bootstrap';
+import {Image} from 'react-bootstrap';
 import WishThumbnail from './wishshow/WishthumbnailComponent.js';
 import WishListToolbar from './WishlisttoolbarComponent.js';
 
@@ -23,7 +23,9 @@ class WishlistComponent extends React.Component {
     var clickProfile = this.props.clickProfileHandle;
     var wishlist = wishes.map(function(wish){
       return (
-          <img href="#" alt={wish.name} src={wish.thumbnail} id={wish.id} onClick={clickHandle} />
+        <div className="thumbnail">
+          <WishThumbnail href="#" alttext={wish.name} thumbnail={wish.thumbnail} wishid={wish.id} onClick={clickHandle}/>
+        </div>
       )
     })
     return (

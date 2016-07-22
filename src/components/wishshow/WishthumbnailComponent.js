@@ -1,7 +1,7 @@
 'use strict';
 
 import React from 'react';
-import {Button,Collapse,Well,Fade,Image} from 'react-bootstrap';
+import {Image} from 'react-bootstrap';
 
 require('styles/wishshow/Wishthumbnail.sass');
 
@@ -11,9 +11,12 @@ class WishthumbnailComponent extends React.Component {
   }
 
   render() {
+    var alttext = this.props.alttext;
+    var clickHandle = this.props.onClick;
+    var wishid = this.props.wishid;
     return (
       <div className="wishthumbnail-component">
-        <img className="wishthumbnail" src={this.props.thumbnail}  alt="wishsummary"/>
+        <Image className="wishthumbnail" src={this.props.thumbnail} id={wishid} alt={alttext}onClick={clickHandle} rounded/>
       </div>
     );
   }
