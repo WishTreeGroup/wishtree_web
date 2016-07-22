@@ -9,24 +9,60 @@ import Wishlist from './WishlistComponent.js';
 let yeomanImage = require('../images/yeoman.png');
 
 class AppComponent extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      page: "wishlist",
+      wishid: null,
+      userid: null
+    };
+    this.clickWishHandle = this.clickWishHandle.bind(this);
+    this.clickBackHandle = this.clickBackHandle.bind(this);
+    this.clickProfileHandle = this.clickProfileHandle.bind(this);
+  }
+  clickWishHandle (e){
+    //alert(e.target.id);
+    this.setState({
+      wishid: e.target.id,
+      page: "wishdetail"
+    });
+  }
+  clickBackHandle(e){
+    //console.log(e.target)
+    this.setState({
+      page: "wishlist"
+    });
+  }
+
+  clickProfileHandle(e){
+    this.setState({
+      page: "userdetail",
+      userid: 1
+    });
+  }
+
   render() {
-    if(true){
-      return (
-        <div className="index">
-          <Wishlist />
-        </div>
-      )
+    switch (this.state.page){
+      case "wishlist":
+            return (
+              <div>
+                <Wishlist clickHandle={this.clickWishHandle} clickProfileHandle={this.clickProfileHandle}/>
+              </div>
+            );
+      case "wishdetail":
+            return (
+              <div className="index">
+                <Wishdetail id={this.state.wishid} clickBackHandle={this.clickBackHandle} />
+              </div>
+            );
+      case "userdetail":
+            return (
+              <div className="index">
+                <Userdetail id={this.state.userid} clickBackHandle={this.clickBackHandle}/>
+              </div>
+            )
     }
-    return (
-      <div className="index">
-        <Userdetail id="3"/>
-      </div>
-    )
-    return (
-      <div className="index">
-        <Wishdetail id="3"/>
-      </div>
-    );
+
   }
 }
 

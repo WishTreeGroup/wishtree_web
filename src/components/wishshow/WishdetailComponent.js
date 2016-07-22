@@ -4,7 +4,7 @@ import React from 'react';
 import Wishthumbnail from './WishthumbnailComponent.js';
 import Wishitems from './WishitemsComponent.js';
 import Wishsummary from './WishsummaryComponent.js';
-
+import Wishtoolbar from './WishdetailtoolbarComponent.js';
 
 require('styles/wishshow/Wishdetail.sass');
 
@@ -26,6 +26,7 @@ class WishdetailComponent extends React.Component {
     }
     return (
       <div className="wishdetail-component">
+        <Wishtoolbar clickHandle={this.props.clickBackHandle}/>
         <Wishthumbnail thumbnail={this.state.thumbnail}/>
         <Wishitems name={this.state.name} type={this.state.type} score = {this.state.score}/>
         <Wishsummary summary={this.state.summary}/>
