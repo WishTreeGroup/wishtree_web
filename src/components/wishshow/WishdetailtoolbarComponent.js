@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import {Nav, NavItem} from 'react-bootstrap';
 
 require('styles/wishshow/Wishdetailtoolbar.sass');
 

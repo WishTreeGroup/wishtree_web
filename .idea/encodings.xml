@@ -5,7 +5,6 @@
     <file url="file://$PROJECT_DIR$/src/components/Main.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/WishlistComponent.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/WishlisttoolbarComponent.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/components/usershow/UseravatarComponent.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/usershow/UserdetailComponent.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/usershow/UserdetailtoolbarComponent.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/components/usershow/UseritemComponent.js" charset="UTF-8" />
@@ -22,7 +21,6 @@
     <file url="file://$PROJECT_DIR$/src/styles/App.css" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/styles/Wishlist.sass" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/styles/Wishlisttoolbar.sass" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/styles/usershow/Useravatar.sass" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/styles/usershow/Userdetail.sass" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/styles/usershow/Userdetailtoolbar.sass" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/styles/usershow/Useritem.sass" charset="UTF-8" />
