@@ -23,9 +23,14 @@ class WishlistComponent extends React.Component {
     var clickProfile = this.props.clickProfileHandle;
     var wishlist = wishes.map(function(wish){
       return (
-        <div className="thumbnail">
-          <WishThumbnail href="#" alttext={wish.name} thumbnail={wish.thumbnail} wishid={wish.id} onClick={clickHandle}/>
-        </div>
+
+          <div className="thumbnail">
+            <WishThumbnail href="#" alttext={wish.name} thumbnail={wish.thumbnail} wishid={wish.id} onClick={clickHandle}/>
+            <div className="thumbdes">
+              {wish.name}
+            </div>
+          </div>
+
       )
     })
     return (

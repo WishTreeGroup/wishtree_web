@@ -31,8 +31,10 @@ class WishdetailComponent extends React.Component {
           <div className="thumbnail">
             <Wishthumbnail id="thumbnail" thumbnail={this.state.thumbnail} alttext={this.state.name}/>
           </div>
+          <div className="wishitems">
+            <Wishitems name={this.state.name} type={this.state.type} score = {this.state.score}/>
+          </div>
 
-          <Wishitems name={this.state.name} type={this.state.type} score = {this.state.score}/>
 
           <Wishsummary summary={this.state.summary}/>
         </div>

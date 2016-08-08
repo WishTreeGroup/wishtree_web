@@ -8,6 +8,10 @@ import Wishlist from './WishlistComponent.js';
 
 let yeomanImage = require('../images/yeoman.png');
 
+sessionStorage.setItem('userId','1');
+
+var userId = sessionStorage.getItem('userId');
+
 class AppComponent extends React.Component {
   constructor(){
     super();
@@ -37,7 +41,7 @@ class AppComponent extends React.Component {
   clickProfileHandle(e){
     this.setState({
       page: "userdetail",
-      userid: 3
+      userid: userId
     });
   }
 

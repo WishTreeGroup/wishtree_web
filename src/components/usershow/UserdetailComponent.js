@@ -36,7 +36,10 @@ class UserdetailComponent extends React.Component {
              <UserAvatar thumbnail={this.state.avatar}/>
            </div>
 
-           <UserItems className="useritems" items={this.state.items}/>
+           <div className="useritems">
+             <UserItems  items={this.state.items}/>
+           </div>
+
          </div>
 
       </div>
